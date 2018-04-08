@@ -27,5 +27,12 @@ module ExerciseApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.generators do |g|
+      g.test_framework  nil
+      g.assets  false
+      g.helper false
+      g.stylesheets false
+    end
   end
 end
