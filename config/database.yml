@@ -14,3 +14,5 @@ test:
   <<: *default
   database: exercise-app_test
 
+production:
+  url: <%= ENV['DATABASE_URL'] %>
