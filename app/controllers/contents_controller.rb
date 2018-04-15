@@ -4,6 +4,7 @@ class ContentsController < ApplicationController
   end
 
   def test
+    p "AAAAAAAAAAAAAA"
     WatchStoreJob.perform_later
   end
 end
