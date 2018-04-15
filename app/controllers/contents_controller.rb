@@ -4,6 +4,6 @@ class ContentsController < ApplicationController
   end
 
   def test
-    EventJob.perform_later
+    WatchStoreJob.perform_later
   end
 end
