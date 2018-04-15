@@ -3,4 +3,9 @@ Rails.application.routes.draw do
   
   get '/contents', to: 'contents#index'
   get '/contents/test', to: 'contents#test'
+
+  require 'sidekiq/web'
+  require 'sidekiq/cron/web'
+  mount Sidekiq::Web => '/sidekiq'
+
 end

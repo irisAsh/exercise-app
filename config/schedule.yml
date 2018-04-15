@@ -1,0 +1,4 @@
+watch_store_job:
+  cron: "* 18 * * *"
+  class: "WatchStoreJob"
+  queue: default
