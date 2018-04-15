@@ -6,6 +6,7 @@ class ContentsController < ApplicationController
   def test
     p "AAAAAAAAAAAAAA"
     p ENV['REDIS_URL']
-    WatchStoreJob.perform_later
+    #WatchStoreJob.perform_later
+    EventJob.perform_later
   end
 end
