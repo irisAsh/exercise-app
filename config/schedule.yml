@@ -1,4 +1,4 @@
 watch_store_job:
-  cron: "0 16 * * * Asia/Tokyo"
+  cron: "0 18 * * * Asia/Tokyo"
   class: "WatchStoreJob"
   queue: default
