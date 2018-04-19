@@ -33,6 +33,7 @@ module ExerciseApp
       g.assets  false
       g.helper false
       g.stylesheets false
+      g.factory_bot false
     end
 
     config.active_job.queue_adapter = :sidekiq
